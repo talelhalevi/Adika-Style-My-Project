@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{865B6EDD-63F3-4733-AA92-18BB84D93A47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adika_Style_My_Project</RootNamespace>
+    <AssemblyName>Adika Style-My Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AddPointsCredit.cs" />
+    <Compile Include="BLL\AddPointsCreditTable.cs" />
+    <Compile Include="BLL\Colors.cs" />
+    <Compile Include="BLL\ColorsTable.cs" />
+    <Compile Include="BLL\CreditCardOfCustomers.cs" />
+    <Compile Include="BLL\CreditCardOfCustomersTable.cs" />
+    <Compile Include="BLL\Customers.cs" />
+    <Compile Include="BLL\CustomersTable.cs" />
+    <Compile Include="BLL\GeneralTable.cs" />
+    <Compile Include="BLL\GeneralTable2Keys.cs.cs" />
+    <Compile Include="BLL\Helper.cs" />
+    <Compile Include="BLL\ItemStock.cs" />
+    <Compile Include="BLL\ItemStockTable.cs" />
+    <Compile Include="BLL\OrderDetails.cs" />
+    <Compile Include="BLL\OrderDetailsTable.cs" />
+    <Compile Include="BLL\Items.cs" />
+    <Compile Include="BLL\ItemsTable.cs" />
+    <Compile Include="BLL\Orders.cs" />
+    <Compile Include="BLL\OrdersTable.cs" />
+    <Compile Include="BLL\Sizes.cs" />
+    <Compile Include="BLL\SizesTable.cs" />
+    <Compile Include="DAL\DAL.cs" />
+    <Compile Include="GUI\FrmAddItemStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmAddItemStock.designer.cs">
+      <DependentUpon>FrmAddItemStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmAddToStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmAddToStock.Designer.cs">
+      <DependentUpon>FrmAddToStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBasic.Designer.cs">
+      <DependentUpon>FrmBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCodeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCodeItem.Designer.cs">
+      <DependentUpon>FrmCodeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCreditCard.Designer.cs">
+      <DependentUpon>FrmCreditCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCustomerByID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCustomerByID.Designer.cs">
+      <DependentUpon>FrmCustomerByID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClass.cs" />
+    <Compile Include="GUI\FrmAddPointsCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmAddPointsCredit.Designer.cs">
+      <DependentUpon>FrmAddPointsCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmColors.Designer.cs">
+      <DependentUpon>FrmColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmColorsItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmColorsItem.Designer.cs">
+      <DependentUpon>FrmColorsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCreditCardOfCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCreditCardOfCustomers.Designer.cs">
+      <DependentUpon>FrmCreditCardOfCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCustomers.Designer.cs">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmAddItem.Designer.cs">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmOrder.Designer.cs">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmOrderByCodeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmOrderByCodeItem.Designer.cs">
+      <DependentUpon>FrmOrderByCodeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPicItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPicItem.Designer.cs">
+      <DependentUpon>frmPicItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPointFalse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPointFalse.Designer.cs">
+      <DependentUpon>FrmPointFalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPurchase.Designer.cs">
+      <DependentUpon>FrmPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmShop1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmShop1.Designer.cs">
+      <DependentUpon>FrmShop1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmStart.Designer.cs">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmToShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmToShop.Designer.cs">
+      <DependentUpon>FrmToShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmViewAllItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmViewAllItems.Designer.cs">
+      <DependentUpon>FrmViewAllItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmViewColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmViewColors.Designer.cs">
+      <DependentUpon>FrmViewColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmViewItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmViewItems.Designer.cs">
+      <DependentUpon>FrmViewItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ItemControl.Designer.cs">
+      <DependentUpon>ItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ShoppingCartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ShoppingCartControl.Designer.cs">
+      <DependentUpon>ShoppingCartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validition.cs" />
+    <EmbeddedResource Include="GUI\FrmAddItemStock.resx">
+      <DependentUpon>FrmAddItemStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmAddToStock.resx">
+      <DependentUpon>FrmAddToStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBasic.resx">
+      <DependentUpon>FrmBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCodeItem.resx">
+      <DependentUpon>FrmCodeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCreditCard.resx">
+      <DependentUpon>FrmCreditCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCustomerByID.resx">
+      <DependentUpon>FrmCustomerByID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmAddPointsCredit.resx">
+      <DependentUpon>FrmAddPointsCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmColors.resx">
+      <DependentUpon>FrmColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmColorsItem.resx">
+      <DependentUpon>FrmColorsItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCreditCardOfCustomers.resx">
+      <DependentUpon>FrmCreditCardOfCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmAddItem.resx">
+      <DependentUpon>FrmAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmOrder.resx">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmOrderByCodeItem.resx">
+      <DependentUpon>FrmOrderByCodeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPicItem.resx">
+      <DependentUpon>frmPicItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPointFalse.resx">
+      <DependentUpon>FrmPointFalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPurchase.resx">
+      <DependentUpon>FrmPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmShop1.resx">
+      <DependentUpon>FrmShop1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmStart.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmToShop.resx">
+      <DependentUpon>FrmToShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmViewAllItems.resx">
+      <DependentUpon>FrmViewAllItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmViewColors.resx">
+      <DependentUpon>FrmViewColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmViewItems.resx">
+      <DependentUpon>FrmViewItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ItemControl.resx">
+      <DependentUpon>ItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ShoppingCartControl.resx">
+      <DependentUpon>ShoppingCartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water lilies1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water lilies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\עדידס.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונה1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FotoliaComp_20442114_LEuayViei0QyXzWbqhPWtgLv9N5eGCHS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FotoliaComp_28838557_qODMqqbvnsMOY2ZSpyPrAZ6K2eOKu2Pb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FotoliaComp_27962196_TpHXZTsVqSmd09xyvDjflEiQkNV21yvL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FotoliaComp_20442098_DMOG2lKstfxqdOl4gizCzVIy19DTpbSt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fotolia_2304414.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מגף כאמל.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מגף פוקסיה.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מגף פוקסיה1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
